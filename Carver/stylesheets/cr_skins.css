@@ -1,0 +1,88 @@
+/* Things to config */
+/* 1.6em; 16 x 1 = 16px */
+/* for variables */
+.box {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.danger {
+  background-color: rgba(212, 13, 18, 0.2);
+  border-color: rgba(148, 9, 13, 0.5);
+  color: #D8000C;
+}
+
+.warning {
+  background-color: rgba(214, 119, 0, 0.2);
+  border-color: rgba(214, 119, 0, 0.5);
+  color: #B87928;
+}
+
+.success {
+  background-color: rgba(10, 164, 6, 0.2);
+  border-color: rgba(7, 139, 2, 0.5);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.inform {
+  background-color: #F8F8F9;
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.inform-blue {
+  background-color: #F8FFFF;
+  border-color: #A9D5DE;
+  color: #276F86;
+}
+
+.butt {
+  border-radius: .28571429rem;
+  padding: 0.65em 2.4em;
+  border: none;
+}
+
+.butt-big {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 0.6457em 0.92857143em;
+  font-size: 1.4em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: .25em;
+  color: #000;
+}
+.butt-big:focus {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.butt-blue {
+  background-color: #2B65EC;
+  border: 1px solid #2B65EC;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.butt-blue:hover {
+  background-color: #2B45EF;
+  border: 1px solid #2B45EF;
+}
+.butt-blue:focus {
+  background-color: #6495ED;
+  border: 1px solid #6495ED;
+}
+
+.butt-space {
+  margin: 0.7222rem;
+  padding: 0.7222rem 1.4444rem;
+}
+
+.butt-space-margin {
+  margin: 0.7222rem;
+}
+
+.butt-space-padding {
+  padding: 0.7222rem 1.4444rem;
+}

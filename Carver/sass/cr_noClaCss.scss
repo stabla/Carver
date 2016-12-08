@@ -1,0 +1,126 @@
+@import "vars"; /* for variables */
+
+/* color
+    ================================================== */
+.c_blue {
+    color: $c-blue;
+}
+.c_white {
+  color: #fff;
+}
+.c_grey {
+  color: $grey-2;
+}
+.c_black {
+  color: #000;
+}
+.c_red {
+    color: $c-red;
+}
+.c_green {
+    color: $c-green;
+
+}
+
+/* background-color
+    =================================================== */
+.bg_white {
+    background-color: $bg-white;
+}
+.bg_grey {
+    background-color: $bg-grey;
+}
+.bg_black {
+    background-color: $bg-black;
+}
+
+/* font-weight
+    =================================================== */
+$u: 100;
+@while $u < 700 {
+    .f-weight_#{$u} {
+        font-weight: $u;
+    }
+  $u: $u + 100;
+}
+/* margin
+    =================================================== */
+$u: 5;
+$j: 5;
+
+.ma_0 {
+    margin: 0;
+}
+@while $u < 55 {
+    .ma_#{$u} {
+        margin: $u + px;
+    }
+  $u: $u + 5;
+}
+
+@while $j <= 50 {
+.ma {
+    &-l_#{$j} {
+        margin-left: $j + px !important;
+    }
+    &-r_#{$j} {
+        margin-right: $j + px !important;
+    }
+    &-t_#{$j} {
+        margin-top: $j + px !important;
+    }
+    &-b_#{$j} {
+        margin-bottom: $j + px !important;
+    }
+    &-rl_#{$j} {
+        margin-right: $j + px !important;
+        margin-left: $j + px !important;
+    }
+    &-tb_#{$j} {
+        margin-top: $j + px !important;
+        margin-bottom: $j + px !important;
+    }
+}
+  $j: $j + 5;
+}
+
+/* padding
+    =================================================== */
+$u: 5;
+$j: 5;
+
+.pa_0 {
+    padding: 0;
+}
+@while $u <= 45 {
+    .pa_#{$u} {
+        padding: $u + px;
+    }
+  $u: $u + 5;
+}
+
+@while $j <= 50 {
+.pa {
+    &-l_#{$j} {
+        padding-left: $j + px !important;
+    }
+    &-r_#{$j} {
+        padding-right: $j + px !important;
+    }
+    &-t_#{$j} {
+        padding-top: $j + px !important;
+    }
+    &-b_#{$j} {
+        padding-bottom: $j + px !important;
+    }
+    &-rl_#{$j} {
+        padding-right: $j + px !important;
+        padding-left: $j + px !important;
+    }
+    &-tb_#{$j} {
+        padding-top: $j + px !important;
+        padding-bottom: $j + px !important;
+    }
+}
+  $j: $j + 5;
+}

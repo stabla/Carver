@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carver - It retools you. </title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/basesign.css">
+    <link rel="stylesheet" href="stylesheets/prism.css">
+    <link rel="stylesheet" href="Carver/stylesheets/Carver.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/manifest.json">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Carver">
+    <meta name="application-name" content="Carver">
+    <meta name="msapplication-config" content="assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</head>
+
+<body>
+  <div class="page">
+   <div class="menu left a-underline_reset a-c_white">
+       <div class="menu-title">
+           <a href="#"><span class="h3">Carver</span><i>docs</i></a>
+       </div>
+       <div class="item">
+           <a href="#introduction-bs"><h5>Introduction</h5></a>
+           <a href="#build-yours-bs"><p>Download</p></a>
+           <a href="#install-bs" id="menu-install"><p>Install</p></a>
+       </div>
+       <div class="item">
+           <a href="#grid-bs"><h5>Grid System</h5></a>
+           <a href="#Basic_1"><p>Basic</p></a>
+           <a href="#Offset_2"><p>Offset</p></a>
+           <a href="#Responsive_3"><p>Responsive</p></a>
+       </div>
+       <div class="item">
+           <a href="#menu-bs"><h5>Menu System</h5></a>
+       </div>
+       <div class="item">
+           <a href="#skins-bs"><h5>Skins</h5></a>
+       </div>
+       <div class="item">
+           <a href="#utilities-bs"><h5>Utilities</h5></a>
+           <a href="#general_1"><p>General</p></a>
+           <a href="#Text_1"><p>Text</p></a>
+           <a href="#Textdecoration__Texttransform_2"><p>Text-decoration</p></a>
+           <a href="#Visibility_3"><p>Visibility</p></a>
+           <a href="#Borderradius_4"><p>Border-radius</p></a>
+           <a href="#Float_5"><p>Float</p></a>
+           <a href="#Display_6"><p>Display</p></a>
+           <a href="#Textalign_7"><p>Text-align</p></a>
+           <a href="#Verticalalign_8"><p>Vertical-Align</p></a>
+           <a href="#Overflow_9"><p>Overflow</p></a>
+           <a href="#Position_10"><p>Position</p></a>
+           <a href="#Unordered_list_11"><p>Unordered list</p></a>
+           <a href="#Tag_a_12"><p>Tag &lt;a&gt;</p></a>
+           <a href="#Fonts_13"><p>Fonts</p></a>
+       </div>
+       <div class="item">
+           <a href="#claCss-bs"><h5>ClaCss.js</h5></a>
+       </div>
+       <div class="item">
+           <a href="#no-clacss-js-bs"><h5>Don't use ClaCss.js?</h5></a>
+           <a href="#Colors_noclacss-1"><p>Colors</p></a>
+           <a href="#font_weight-noclacss-2"><p>Font-weight</p></a>
+           <a href="#pre-margins-noclacss-3"><p>Margins</p></a>
+           <a href="#pre-paddings-noclacss-4"><p>Paddings</p></a>
+       </div>
+       <div class="item">
+           <a href="#good-google-fonts"><h5>Good Google Fonts</h5></a>
+           <a href="#good-google-fonts"><h5>Beautiful Web Type</h5></a>
+           <a href="#hackdesign-bs"><h5>HackDesign</h5></a>
+           <a href="#design-tips-bs"><h5>Design Tips</h5></a>
+       </div>
+   </div>
+
+    <div class="nav-bar fit p_fixed" id="nav-bar">
+        <div class="container o_auto">
+            <div class="nav-left">
+                <div class="brand">
+                    <span class="brand-logo c_white h3"> <a href="#" class="a-c_white a-underline_reset c_white">Carver</a> </span>
+                    <span id="menu-btn" class="c_white bold pointer hamburger hamburger-1">
+                    <span class="d_inline-block p_relative" style="top: 7px;">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+        Menu
+               </span>
+                </div>
+
+            </div>
+            <div class="nav-right butt-github_twitter">
+               <div class="butt-container d_inline-block">
+                <div><a class="github-button" href="https://github.com/stabla/Carver" data-count-href="/stabla/Carver/stargazers" data-count-api="/repos/stabla/Carver#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star stabla/Carver on GitHub">Star</a></div>
+                <div><a class="twitter-share-button d_block" href="https://twitter.com/intent/tweet?text=Carver+is+CSS+Tools+to+carve+a+website+web%2C+it+is+here+and+I+just+tried+it+%21" data-size="small"> Tweet</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-hero" id="header-hero">
+        <div class="hero-text helvetica-neue t_center bigger-h c_white">
+            <h1>Carver</h1>
+            <h4> CSS Tools for carving a website. </h4>
+            <button class="butt-get_started bg-white">Get started</button>
+            <div class="d_none butt-github_twitter">
+               <div class="butt-container d_inline-block">
+                <div><a class="github-button" href="https://github.com/stabla/Carver" data-count-href="/stabla/Carver/stargazers" data-count-api="/repos/stabla/Carver#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star stabla/Carver on GitHub">Star</a></div>
+                <div><a class="twitter-share-button d_block" href="https://twitter.com/intent/tweet?text=Carver+is+a+CSS+Framework+for+more+elegant+web%2C+it+is+here+and+I+just+tried+it+%21" data-size="small"> Tweet</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-frame t_center">
+        <svg version="1.1" id="smartphone-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 504.124 504.124" style="enable-background:new 0 0 504.124 504.124;" xml:space="preserve">
+            <path style="fill:#E4E7E7;" d="M153.6,0h196.923c21.662,0,39.385,17.723,39.385,39.385v425.354
+	c0,21.662-17.723,39.385-39.385,39.385H153.6c-21.662,0-39.385-17.723-39.385-39.385V39.385C114.215,17.723,131.939,0,153.6,0z" />
+            <path style="fill:#3F5E6D;" d="M145.724,70.892H358.4c4.332,0,7.877,3.545,7.877,7.877v346.585c0,4.332-3.545,7.877-7.877,7.877
+	H145.724c-4.332,0-7.877-3.545-7.877-7.877V78.769C137.846,74.437,141.392,70.892,145.724,70.892z" />
+            <path style="fill:#BFC3C5;" d="M252.063,448.985c11.028,0,19.692,8.665,19.692,19.692c0,11.028-8.665,19.692-19.692,19.692
+	c-11.028,0-19.692-8.665-19.692-19.692C232.37,457.649,241.034,448.985,252.063,448.985z M228.431,27.569h47.262
+	c4.332,0,7.877,3.545,7.877,7.877s-3.545,7.877-7.877,7.877h-47.262c-4.332,0-7.877-3.545-7.877-7.877
+	S224.099,27.569,228.431,27.569z" />
+        </svg>
+
+        <svg version="1.1" id="tablet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 504.124 504.124" style="enable-background:new 0 0 504.124 504.124;" xml:space="preserve">
+            <path style="fill:#E4E7E7;" d="M98.462,0h307.2c12.997,0,23.631,10.634,23.631,23.631v456.862c0,12.997-10.634,23.631-23.631,23.631
+	h-307.2c-12.997,0-23.631-10.634-23.631-23.631V23.631C74.831,10.634,85.465,0,98.462,0z" />
+            <path style="fill:#3F5E6D;" d="M106.338,70.892h291.446c4.332,0,7.877,3.545,7.877,7.877v346.585c0,4.332-3.545,7.877-7.877,7.877
+	H106.338c-4.332,0-7.877-3.545-7.877-7.877V78.769C98.462,74.437,102.006,70.892,106.338,70.892z" />
+            <path style="fill:#BFC3C5;" d="M252.062,448.985c11.028,0,19.692,8.665,19.692,19.692c0,11.028-8.665,19.692-19.692,19.692
+	c-11.028,0-19.692-8.665-19.692-19.692C232.369,457.649,241.034,448.985,252.062,448.985z M252.062,27.569
+	c4.332,0,7.877,3.545,7.877,7.877s-3.545,7.877-7.877,7.877s-7.877-3.545-7.877-7.877S247.729,27.569,252.062,27.569z" />
+        </svg>
+        <svg version="1.1" id="computer-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 393.847 393.847" style="enable-background:new 0 0 393.847 393.847;" xml:space="preserve">
+            <path style="fill:#CCD0D2;" d="M147.692,304.641h104.763v49.231H147.692V304.641z" />
+            <path style="fill:#E4E7E7;" d="M135.483,353.871h129.182c6.695,0,12.209,5.514,12.209,12.209s-5.514,12.209-12.209,12.209H135.483
+	c-6.695,0-12.209-5.514-12.209-12.209S128.788,353.871,135.483,353.871z" />
+            <path style="fill:#36434F;" d="M18.511,15.557h356.825c10.24,0,18.511,8.271,18.511,18.511v248.517c0,10.24-393.846,10.24-393.846,0
+	V34.068C0,23.828,8.271,15.557,18.511,15.557z" />
+            <path style="fill:#465765;" d="M18.511,34.068h356.825V243.2H18.511V34.068z" />
+            <path style="fill:#E4E7E7;" d="M153.994,89.6h86.252c3.545,0,6.302,2.757,6.302,6.302v92.16c0,3.545-2.757,6.302-6.302,6.302
+	h-86.252c-3.545,0-6.302-2.757-6.302-6.302V95.508C147.692,92.357,150.449,89.6,153.994,89.6z" />
+            <path style="fill:#FFFFFF;" d="M172.505,163.249h49.231v12.209h-49.231V163.249z" />
+            <path style="fill:#C2C5C5;" d="M196.923,107.717c10.24,0,18.511,8.271,18.511,18.511s-8.271,18.511-18.511,18.511
+	s-18.511-8.271-18.511-18.511S186.683,107.717,196.923,107.717z" />
+            <path style="fill:#B7BBBD;" d="M147.692,304.641h104.763v18.511H147.692V304.641z" />
+            <path style="fill:#E4E7E7;" d="M0,286.523c0,10.24,8.271,18.511,18.511,18.511h356.825c10.24,0,18.511-8.271,18.511-18.511v-24.418
+	H0V286.523z" />
+        </svg>
+        <h3 class="ma-t_20 custom-color-brand">Build faster than you think.</h3>
+        <h5 class="custom-color-grey-2">Carver is development framework that helps create beautiful web page. </h5>
+    </div>
+    <div class="frame">
+        <div class="bs-base t_center">
+            <ul class="li-inline ma-t_35 custom-color-grey-2">
+                <li class="h4 ma-rl_25"> Optimal size </li>
+                <li class="h4 ma-rl_25"> Handle spacing </li>
+                <li class="h4 ma-rl_25"> Readable website </li>
+                <li class="h4 ma-rl_25"> Utilities &amp; Tools </li>
+            </ul>
+        </div>
+        <div class="light-bs" id="introduction-bs">
+
+        </div>
+        <div class="grid-bs o_auto" id="grid_bs">
+            <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> Grid System</h2>
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center">
+                    <div class="cl cl-8"></div>
+                    <div class="cl cl-4"></div>
+                    <div class="cl cl-4"></div>
+                    <div class="cl cl-4"></div>
+                    <div class="cl cl-4"></div>
+                    <div class="cl cl-2 cl-s-4"></div>
+                    <div class="cl cl-2 cl-s-2"></div>
+                    <div class="cl cl-2 cl-s-6"></div>
+                    <div class="cl cl cl-6 cl-s-6"></div>
+                    <div class="cl cl-1 cl-s-0"></div>
+                    <div class="cl cl-3 cl-s-6"></div>
+                    <div class="cl cl-2 cl-s-6"></div>
+                    <div class="cl cl-3 cl-s-3"></div>
+                    <div class="cl cl-1 cl-s-3"></div>
+                    <div class="cl cl-2 cl-s-5"></div>
+                    <div class="cl-6 cl-s-7 custom-color-grey">
+                        <h4> It's responsive, try it ! </h4>
+                        <p> Resize your brower's size and look how it reacting. </p>
+                    </div>
+                    <div class="cl cl-6"></div>
+                    <div class="cl cl-6"></div>
+                    <div class="cl cl-4"></div>
+                    <div class="cl cl-8"></div>
+                    <div class="cl cl-4"></div>
+                    <div class="cl cl-offset-4 cl-4 cl-s-offset-4"></div>
+                    <div class="cl cl-12 cl-s-12 cl-xs-6"></div>
+                    <div class="cl cl-4 cl-s-5 cl-xs-6"></div>
+                    <div class="cl cl-offset-5 cl-3 cl-s-offset-4 cl-s-7 cl-xs-0"></div>
+                    <div class="cl-9 cl-s-7">
+                        <div class="cl cl-offset-4 cl-8 cl-s-12 no-content-box custom-bg-grey"></div>
+                        <div class="cl cl-offset-5 cl-7 cl-s-8 no-content-box custom-bg-greyer"></div>
+                    </div>
+                    <div class="cl-3 cl-s-5 custom-color-greyer" >
+                        <h4> Offset </h4>
+                        <p> Make it more comfortable with space. </p>
+                    </div>
+                    <h4><a id="Basic_1"></a>Basic</h4>
+                    <p>You can set a row like that :</p>
+                    <pre><code class="language-html"> &lt;div class=&quot;row&quot;&gt;
+     &lt;div class=&quot;cl-X&quot;&gt;&lt;/div&gt;
+ &lt;/div&gt;
+</code></pre>
+                    <p>Where X is a number between 0 and 12. 0 is for nothing, and 12 is for a 100% width column.</p>
+                    <p>But row is, not really necessary, it’s just to be sure to set a width to 100% (row is only width: 100%)</p>
+                    <p><strong> How center a column? </strong></p>
+                    <p> You can center you column by adding <code>.center</code>, but it must have <code>row</code> as ancestor (but not necessarily direct parent!) </p>
+                    <h4><a id="Offset_2"></a>Offset</h4>
+                    <p><strong>How to create an offset ?</strong></p>
+                    <p><code>cl-offset-X</code> where <code>X</code> is a number between 1 and 12. 1 is for a little offset, and 6 is for the half of the available space offset.</p>
+                    <pre><code class="language-html">    Example : class=&quot;cl-offset-4&quot;
+</code></pre>
+                    <p> You can set a <code>cl-s-offset-X</code> or a <code>cl-xs-offset-X</code> to handle responsivity. </p>
+                    <h4><a id="Responsive_3"></a>Responsive</h4>
+                    <p><strong>For screen where width is under 780px : s</strong></p>
+                    <p><code>cl-s-X</code> where <code>X</code> is a number between 0 and 12. Where 0 is for a display: none, to make it disapear, and 12 is for full width. Therefore, 6 is for 50% because 6 is 50% of 12.</p>
+                    <pre><code class="language-html">    Example : class=&quot;cl-s-8&quot;
+</code></pre>
+                    <p><strong>For screen where width is under 460px : xs</strong></p>
+                    <p><code>cl-xs-X</code> where <code>X</code> is a number between 0 and 12. Where 0 is for a display: none, to make it disapear, and 12 is for full width. Therefore, 6 is for 50% because 6 is 50% of 12.</p>
+                    <pre><code class="language-html">    Example : class=&quot;cl-xs-8&quot;
+</code></pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu-bs" id="menu-bs">
+            <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> Menu System </h2>
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center">
+                    <p>There’s a list of available class, it’s understable, no explanation needed.</p>
+                    <ul>
+                        <li>
+                            <p><code>.nav-bar</code> : setting up a navbar</p>
+                        </li>
+                        <li>
+                            <p><code>.nav-left</code> : setting up a left side to a navbar</p>
+                        </li>
+                        <li>
+                            <p><code>.nav-right</code> : setting up a right side to a navbar</p>
+                        </li>
+                        <li>
+                            <p><code>.brand-logo</code>: setting up a position for your logo</p>
+                        </li>
+                        <li>
+                            <p><code>.brand-logo-text</code>: setting up a position for a text</p>
+                        </li>
+                        <li>
+                            <p><code>.container</code> : setting up a contain for your navbar.</p>
+                        </li>
+                        <li>
+                            <p><code>.container-off</code>: no margin, to use in your JS… or maybe not. (It’s responsive)</p>
+                        </li>
+                    </ul>
+                    <div class="box-exemple">
+                        <div class="title-exemple"></div>
+                        <div class="bigger-h bigger-t">
+                            <div class="nav-bar custom-bg-grey-clear ma-b_15">
+                                <div class="nav-left">
+                                    <div class="brand-logo-text">
+                                        <h3>BRAND</h3>
+                                    </div>
+                                </div>
+                                <div class="nav-right">
+                                    <ul class="li-inline li-space">
+                                        <li> Sign in </li>
+                                        <li> Sign up </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-exemple">
+                            <div class="title-code pointer"></div>
+                            <div class="inside">
+                                <pre><code class="language-html word-wrap-break">
+&lt;div class="nav-bar"&gt;
+         &lt;div class="nav-left"&gt;
+             &lt;div class="brand-logo-text"&gt;
+                 &lt;h3&gt;BRAND&lt;/h3&gt;
+             &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="nav-right"&gt;
+                 &lt;ul class="li-inline li-space"&gt;
+                     &lt;li&gt; Sign in &lt;/li&gt;
+                     &lt;li&gt; Sign up &lt;/li&gt;
+                 &lt;/ul&gt;
+          &lt;/div&gt;
+&lt;/div&gt;
+                                    </code></pre>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skins-bs" id="skins-bs">
+            <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> Skins </h2>
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center">
+                    <ul>
+                        <li><code>.box</code> : make a box</li>
+                        <li><code>.danger</code> : to show a danger message (red color). To add to <code>.box</code></li>
+                        <li><code>.warning</code> : to show an alert message (orange color). To add to <code>.box</code></li>
+                        <li><code>.success</code> : to show an success message (green color). To add to <code>.box</code></li>
+                        <li><code>.inform</code> : to show an inform message (grey color). To add to <code>.box</code></li>
+                        <li><code>.inform-blue</code> : to show an inform message (blue color). To add to <code>.box</code></li>
+                        <li><code>.butt</code> : to make quickly a button. To add to submit, button, or just a to make a button.</li>
+                        <li><code>.butt-bs</code> : Another version of <code>.butt</code>.</li>
+                        <li><code>.butt-blue</code> : to make a button, but in blue. To add to <code>.butt</code></li>
+                        <li><code>.butt-space</code> : a little space, margin and padding, it’s can only be good.</li>
+                        <li><code>.butt-space-margin</code> : for margin space.</li>
+                        <li><code>.butt-space-padding</code> : for padding space.</li>
+                    </ul>
+                    <div class="box-exemple">
+                        <div class="title-exemple"> for box</div>
+                        <div class="pa_space">
+                            <div class="box">Simple box</div>
+                            <div class="box danger">Danger box !</div>
+                            <div class="box warning">Warning box !</div>
+                            <div class="box success">Succes box !</div>
+                            <div class="box inform"> We want to inform you about... </div>
+                            <div class="box inform-blue"> We don't know... </div>
+                        </div>
+                        <div class="code-exemple">
+                            <div class="title-code pointer"></div>
+                            <div class="inside">
+                                <pre><code class="language-html">
+&lt;div class="box"&gt;Simple box&lt;/div&gt;
+&lt;div class="box danger"&gt;Danger box !&lt;/div&gt;
+&lt;div class="box warning"&gt;Warning box !&lt;/div&gt;
+&lt;div class="box success"&gt;Succes box !&lt;/div&gt;
+&lt;div class="box inform"&gt; We want to inform you about... &lt;/div&gt;
+&lt;div class="box inform-blue"&gt; We don't know... &lt;/div&gt;
+                                    </code></pre>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-exemple">
+                        <div class="title-exemple"> for buttons</div>
+                        <div class="pa_space">
+                            <button class="ma-r_10"> Sign in </button>
+                            <button class="butt">Sign in</button>
+                            <button class="butt butt-blue">Sign in</button>
+                            <button class="butt-big">Sign in</button>
+                            <button class="butt-big butt-blue ma-r_10">Sign in</button>
+                        </div>
+                        <div class="code-exemple">
+                            <div class="title-code pointer"></div>
+                            <div class="inside">
+                                <pre><code class="language-html">
+&lt;button&gt; Sign in &lt;/button&gt;
+&lt;button class="butt"&gt;Sign in&lt;/button&gt;
+&lt;button class="butt butt-blue"&gt;Sign in&lt;/button&gt;
+&lt;button class="butt-big"&gt;Sign in&lt;/button&gt;
+&lt;button class="butt-big butt-blue"&gt;Sign in&lt;/button&gt;
+                           </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="utilities-bs" id="utilities-bs">
+            <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> Utilities &amp; CSS Prewrited classes </h2>
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center bigger-t">
+                    <p id="general_1">A list of available utilities and prewrited classes :</p>
+                    <ul>
+                        <li><code>.fit</code> : fit element to full size available. (width: 100%)</li>
+                        <li><code>.clear</code> : clear:both</li>
+                        <li><code>.clearfix</code> : trivial</li>
+                        <li><code>.ma_space</code> : create a outer space of 18px</li>
+                        <li><code>.ma_reset</code> : Reset margin</li>
+                        <li><code>.pa_space</code> : create a inner space of 18px</li>
+                        <li><code>.pa_reset</code> : Reset padding</li>
+                        <li><code>.center</code> : center a block</li>
+                        <li><code>.pointer</code> : cursor to pointer</li>
+                        <li><code>.c_transparent</code> : Make color transparent</li>
+                        <li><code>.bg_transparent</code> : Make background-color transparent</li>
+                        <li><code>.bg_none</code> : Make background-color as none</li>
+                        <li><code>.bo-c_transparent</code> : Make border-color as transparent</li>
+                        <li><code>.p-improved</code> : Maximum width, to improve readibility. (be care with this)</li>
+                    </ul>
+                    <h4><a id="Text_1"></a>Text</h4>
+                    <ul>
+                        <li><code>.o-ellipsis</code> : text-overflow to ellipsis</li>
+                        <li><code>.word-wrap-break</code> : word-wrap to break-work</li>
+                        <li><code>.t-small</code> : a smaller text</li>
+                        <li><code>.t-big</code> : a bigger text</li>
+                        <li><code>.italic</code> : make text italic</li>
+                        <li><code>.bold</code> : make text bold</li>
+                        <li><code>.bolder</code> : make text bolder</li>
+                        <li><code>.light</code> : make font-weight light</li>
+                        <li><code>.lighter</code> : make font-weight lighter</li>
+                    </ul>
+                    <h5><a id="Textdecoration__Texttransform_2"></a>Text-decoration &amp; Text-transform</h5>
+                    <ul>
+                        <li><code>.underline</code> : underline text</li>
+                        <li><code>.uppercase</code> : uppercase text</li>
+                        <li><code>.lowercase</code> : lowercase text</li>
+                        <li><code>.capitalize</code> : capitalize text</li>
+                    </ul>
+                    <h4><a id="Visibility_3"></a>Visibility</h4>
+                    <ul>
+                        <li><code>.visible</code> : visibility to visible</li>
+                        <li><code>.hidden</code> : visibility to hidden</li>
+                    </ul>
+                    <h4><a id="Borderradius_4"></a>Border-radius</h4>
+                    <ul>
+                        <li><code>.round</code> : border-radius to 12px</li>
+                        <li><code>.circle</code> : Make a circle</li>
+                    </ul>
+                    <h4><a id="Float_5"></a>Float</h4>
+                    <ul>
+                        <li><code>.fl_l</code> : float left</li>
+                        <li><code>.fl_r</code> : float right</li>
+                        <li><code>.fl_none</code> : float none</li>
+                    </ul>
+                    <h4><a id="Display_6"></a>Display</h4>
+                    <ul>
+                        <li><code>.d_block</code> : display to block</li>
+                        <li><code>.d_inline-block</code> : display to inline-block</li>
+                        <li><code>.d_none</code> : display to none</li>
+                        <li><code>.d_inline</code> : display to inline</li>
+                        <li><code>.d_flex</code> : display to flex</li>
+                        <li><code>.d_inline-flex</code> : display to inline-flex</li>
+                    </ul>
+                    <h4><a id="Textalign_7"></a>Text-align</h4>
+                    <ul>
+                        <li><code>.t_l</code> : align text to left</li>
+                        <li><code>.t_center</code> : align text to center</li>
+                        <li><code>.t_r</code> : align text to right</li>
+                        <li><code>.t_justify</code> : justify your text</li>
+                    </ul>
+                    <h4><a id="Verticalalign_8"></a>Vertical-align</h4>
+                    <ul>
+                        <li><code>.v_baseline</code> : set vertical-align to baseline</li>
+                        <li><code>.v_top</code> : set vertical-align to top</li>
+                        <li><code>.v_bottom</code> : set vertical-align to bottom</li>
+                        <li><code>.v_middle</code> : set vertical-align to middle</li>
+                        <li><code>.v_inherit</code> : set vertical-align to inherit</li>
+                    </ul>
+                    <h4><a id="Overflow_9"></a>Overflow</h4>
+                    <ul>
+                        <li><code>.o_auto</code> : set overflow to auto</li>
+                        <li><code>.o_hidden</code> : set overflow to hidden</li>
+                        <li><code>.o_inherit</code> : set overflow to inherit</li>
+                        <li><code>.o_scroll</code> : set overflow to scroll</li>
+                        <li><code>.o_visible</code> : set overflow to visible</li>
+                    </ul>
+                    <h4><a id="Position_10"></a>Position</h4>
+                    <ul>
+                        <li>
+                            <p><code>.p_absolute</code> : set position to absolute</p>
+                        </li>
+                        <li>
+                            <p><code>.p_fixed</code> : set position to fixed</p>
+                        </li>
+                        <li>
+                            <p><code>.p_inherit</code> : set position to inherit</p>
+                        </li>
+                        <li>
+                            <p><code>.p_relative</code> : set position to relative</p>
+                        </li>
+                        <li>
+                            <p><code>.p_static</code> : set position to static</p>
+                        </li>
+                        <li>
+                            <p><code>.p_sticky</code> : set position to sticky</p>
+                        </li>
+                    </ul>
+                    <h4><a id="Unordered_list_11"></a>Unordered list</h4>
+                    <ul>
+                        <li><code>.li-inline</code> : set this to your <code>ul</code> and <code>li</code> element(s) will be inline</li>
+                        <li><code>.li-reset</code> : set this to your <code>ul</code> and style of <code>li</code> element(s) will be reseted</li>
+                        <li><code>.li-tb-space</code> : set this to your <code>ul</code> and <code>li</code> element(s) will breathe a little bit in top and bottom side</li>
+                        <li><code>.li-rl-space</code> : set this to your <code>ul</code> and <code>li</code> element(s) will breathe a little bit in right and left side</li>
+                    </ul>
+                    <h4><a id="Tag_a_12"></a>Tag <code>&lt;a&gt;</code></h4>
+                    <ul>
+                        <li><code>.a_reset</code> : reset your <code>a</code> default style. Color will be in black. It will also reset color for :visited and :link.</li>
+                        <li><code>.a-underline_reset</code> : reset only underline</li>
+                        <li><code>.a-c_reset</code> : reset only color (color will be in black)</li>
+                        <li><code>.a-c_black</code> : color will be in black.</li>
+                        <li><code>.a-c_white</code> : color will be in white.</li>
+                    </ul>
+                    <h4><a id="Fonts_13"></a>Fonts</h4>
+                    <h5>Serif</h5>
+                    <ul>
+                        <li><code>.serif</code> : set <code>font-family: serif</code></li>
+                        <li><code>.times</code> : set <code>font-family: times</code></li>
+                        <li><code>.times-new-roman</code> : set <code>font-family: &quot;Times New Roman&quot;</code></li>
+                        <li><code>.georgia</code> : set <code>font-family: georgia</code></li>
+                    </ul>
+                    <h5>Sans</h5>
+                    <ul>
+                        <li><code>.sans</code> : set <code>font-family: sans</code></li>
+                        <li><code>.arial</code> : set <code>font-family: Arial</code></li>
+                        <li><code>.helvetica</code> : set <code>font-family: Helvetica</code></li>
+                        <li><code>.helvetica-neue</code> : set <code>font-family: &quot;Helvetica Neue&quot;</code></li>
+                    </ul>
+
+                    <div class="box-exemple">
+                        <div class="title-exemple"></div>
+                        <div class="pa_space">
+                            <p class="p_improved center">
+                                Kafka's writing has inspired the term <span class="bold">"Kafkaesque"</span>, used to describe concepts and situations reminiscent of his work, particularly Der Process (The Trial) and <span class="underline">"Die Verwandlung" (The Metamorphosis)</span>. <span class="t-big">Examples</span> include instances in which bureaucracies overpower people, often in a surreal, nightmarish milieu which evokes feelings of senselessness, disorientation, and <span class="ma_space">helplessness</span>. Characters in a Kafkaesque setting often lack a clear course of action to escape a <span class="t-small">labyrinthine situation</span>. Kafkaesque elements often appear in existential works, but the term has transcended the literary realm to apply to real-life occurrences and situations that are incomprehensibly complex, bizarre, or illogical.
+                            </p>
+                        </div>
+                        <div class="code-exemple">
+                            <div class="title-code pointer"></div>
+                            <div class="inside">
+                                <pre><code class="language-html">
+&lt;p class="p-improved center"&gt;
+Kafka's writing has inspired the term &lt;span class="bold"&gt;"Kafkaesque"&lt;/span&gt;, used to describe concepts and situations  reminiscent of his work, particularly Der Process (The Trial) and &lt;span class="underline"&gt;"Die Verwandlung" (The Metamorphosis)&lt;/span&gt;. &lt;span class="t-big"&gt;Examples&lt;/span&gt; include instances in which bureaucracies overpower people, often in a surreal, nightmarish milieu which evokes feelings of senselessness, disorientation, and &lt;span class="ma_space"&gt;helplessness&lt;/span&gt;. Characters in a Kafkaesque setting often lack a clear course of action to escape a &lt;span class="t-small"&gt;labyrinthine situation&lt;/span&gt;. Kafkaesque elements often appear in existential works, but the term has transcended the literary realm to apply to real-life occurrences and situations that are incomprehensibly complex, bizarre, or illogical.
+&lt;/p&gt;
+                           </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clacss-bs" id="claCss-bs">
+            <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> ClaCss.js </h2>
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center bigger-t">
+                    <p>ClaCss.js is a tool to write css directly in your HTML, if you wanna know more, check the dedicated <a href="https://github.com/stabla/ClaCss">website</a>.</p>
+
+                    <p> With ClaCss you can set color, background-color, height, width, etc... directly in your code.</p>
+                    <p>When you use ClaCss.js you can have a lighter Carver. I don’t recommend to use ClaCss.js for big project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="no-clacss-js" id="no-clacss-js-bs">
+            <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> Only if you don't use ClaCss.js </h2>
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center bigger-t">
+
+                    <h4><a id="Colors_noclacss-1"></a>Colors &amp; Background-color</h4>
+                    <ul>
+                        <li>
+                            <p><code>.c_blue</code> : set color to blue</p>
+                        </li>
+                        <li>
+                            <p><code>.c_white</code> : set color to white</p>
+                        </li>
+                        <li>
+                            <p><code>.c_grey</code> : set color to grey</p>
+                        </li>
+                        <li>
+                            <p><code>.c_black</code> : set color to black</p>
+                        </li>
+                        <li>
+                            <p><code>.c_red</code> : set color to red</p>
+                        </li>
+                        <li>
+                            <p><code>.c_green</code> : set color to green</p>
+                        </li>
+                        <li>
+                            <p><code>.bg_white</code> : set background-color to white</p>
+                        </li>
+                        <li>
+                            <p><code>.bg_grey</code> : set background-color to grey</p>
+                        </li>
+                        <li class="ma-b_20">
+                            <p><code>.bg_black</code> : set background-color to black</p>
+                        </li>
+                    </ul>
+                    <h4><a id="font_weight-noclacss-2"></a>Font weight</h4>
+                    <ul>
+                        <p><code>.f-weight_X</code> : set font-weight. X can be 100, 200, 300, 400, 500, 600, 700.</p>
+                    </ul>
+                    <h4><a id="pre-margins-noclacss-3"></a>Prewrited margins</h4>
+                    <ul>
+                        <li>
+                            <p><code>.ma_0</code> : margin to 0.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma_X</code> : set margin. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma-l_X</code> : set margin-left. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma-r_X</code> : set margin-right. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma-t_X</code> : set margin-top. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma-b_X</code> : set margin-bottom. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma-rl_X</code> : set margin-right and margin-left. X can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.ma-tb_X</code> : set margin-top and margin-bottom. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                    </ul>
+                    <h4><a id="pre-paddings-noclacss-4"></a>Prewrited paddings</h4>
+                    <ul>
+                        <li>
+                            <p><code>.pa_0</code> : set padding to 0.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa_X</code> : set padding. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa-l_X</code> : set padding-left. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa-r_X</code> : set padding-right. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa-t_X</code> : set padding-top. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa-b_X</code> : set padding-bottom. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa-rl_X</code> : set padding-right and padding-left. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                        <li>
+                            <p><code>.pa-tb_X</code> : set padding-top and padding-bottom. X Can be 5, 10, 15, 20, 25.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="ma-tb_25 ma-l_50 custom-color-brand" id="good-google-fonts"><a href="https://stabla.github.io/good-google-fonts/" class="a_reset">Good Google Fonts</a> &amp; <a href="http://chad.is/beautiful-web-type/" class="a_reset">Beautiful Web Type</a></h2>
+        <h2 class="ma-tb_25 ma-l_50 custom-color-brand" id="hackdesign-bs"><a href="http://www.hackdesign.org" class="a_reset">Hack Design</a></h2>
+        <h2 class="ma-tb_25 ma-l_50 custom-color-brand"> Some tips.<a href="https://github.com/stabla/Carver" class="a_reset custom-color-brand t-small">(Add/Modify if you want!)</a></h2>
+
+
+        <h2 class="ma-l_50 custom-color-brand"><a id="License"></a>License</h2>
+        <div class="row">
+            <div class="cl-8 cl-s-10 cl-xs-12 center bigger-t">
+                <p>Under MIT license.</p>
+                <p>What about pushing some improvement ? If you have an idea, or suggestion(s), check our <a href="https://github.com/stabla/Carver">Github</a></p>
+            </div>
+        </div>
+
+
+        <h2 class="ma-l_50 ma-b_20 custom-color-brand" id="build-yours-bs">Build yours</h2>
+        <div class="build-yours ma-tb_20 d_block">
+            <div class="row">
+                <div class="cl-8 cl-s-10 cl-xs-12 center">
+                    <div class="custom-dl">
+                        <div class="box-custom-dl c_white">
+                            <div class="ckbx custom-checkbox unselected" id="Carver_light">Basesign</div>
+                            <div class="ckbx custom-checkbox selected" id="bs_grid"> Grid system </div>
+                            <div class="ckbx custom-checkbox selected" id="bs_nav"> Nav system </div>
+                            <div class="ckbx custom-checkbox selected" id="bs_skins"> Skins </div>
+                            <div class="ckbx custom-checkbox selected" id="bs_utilities"> Utilities &amp; Prebuilded tools </div>
+                            <div class="choice-case custom-checkbox d_flex">
+                                <div class="ckbx d_inline-block box-a selected" id="bs_noClaCss"> Carver CSS</div>
+
+                                <div class="d_inline-block box-b unselected" id="claCss">
+                                <a href="https://github.com/stabla/ClaCss/zipball/master" class="a_reset">Get ClaCSS.js</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-dl-btn o_auto">
+                        <button class="custom-btn p_relative" id="create">Download</button>
+                    </div>
+                    <div class="text-to-head d_none" id="install-bs">
+
+                            <div class="nav-bar">
+                        <pre><code class="language-html">
+&lt;link rel="stylesheet" href="Carver.css"&gt;
+
+&lt;!-- Only if you have selected Grid System --&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        </code></pre>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer c_white pa_25">
+        Find this project on <a href="https://www.github.com/stabla/Carver" class="custom-color-blank a-underline_reset">Github</a>, or find me on my <a href="http://www.stabla.me" class="custom-color-blank a-underline_reset">website</a>.
+
+    </div>
+    </div>
+    <script src="js/prism.js"></script>
+</body>
+
+</html>
