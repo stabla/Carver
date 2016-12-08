@@ -1,4 +1,4 @@
-# Carver
+# Carver <img src="https://github.com/stabla/Carver/blob/gh-pages/assets/chisel.png" alt="Carver-logo" width="56" height="56">
 
 Carver is a miniscule css framework giving good bases in naked HTML document. Make the web more elegant. With a better readibility. Better size. Improved spacing. Make sure to create a readable and graceful website.
 
