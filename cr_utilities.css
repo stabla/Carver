@@ -1,0 +1,390 @@
+/* Things to config */
+/* 1.6em; 16 x 1 = 16px */
+/* for variables */
+/*
+Pre-build classes to use
+*/
+.fit {
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.t-small {
+  font-size: 70%;
+}
+
+.t-big {
+  font-size: 130%;
+}
+
+.o-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.word-wrap-break {
+  word-wrap: break-word;
+}
+
+.ma_space {
+  margin: 15px;
+}
+
+.ma_reset {
+  padding: 0 !important;
+}
+
+.pa_space {
+  padding: 15px;
+}
+
+.pa_reset {
+  padding: 0 !important;
+}
+
+.c_transparent {
+  color: transparent;
+}
+
+.bg_transparent {
+  background-color: transparent;
+}
+
+.bg_none {
+  background-color: none;
+}
+
+.bo-c_transparent {
+  border-color: transparent;
+}
+
+/*
+ * Optimal readiblity is between 50 and 80 character per line. Trying to be in interval by setting 470px;
+ */
+.p-improved, .p-improved p {
+  max-width: 470px;
+  /* 1. (Change to your preferences) */
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Alternative : <i></i> and <strong></strong>
+    ================================================== */
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.light {
+  font-weight: light;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+/*
+    Pre-build-css.
+
+    Other utilities, as float, text, float, center a block, text-underline/uppercase/lowercase.
+*/
+/* float or center a block.
+    ================================================== */
+.fl_l {
+  float: left;
+}
+
+.center {
+  /* Have to be a block to work */
+  margin: 0 auto;
+}
+
+.fl_r {
+  float: right;
+}
+
+.fl_none {
+  float: none;
+}
+
+/* pointer
+    ================================================== */
+.pointer {
+  cursor: pointer;
+}
+
+/* text-decoration, text-transform.
+    ================================================== */
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* visibility
+    ================================================== */
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* border-radius
+    ================================================== */
+.round {
+  border-radius: 12px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/* display
+    ================================================== */
+.d_block {
+  display: block;
+}
+
+.d_inline-block {
+  display: inline-block;
+}
+
+.d_none {
+  display: none;
+}
+
+.d_inline {
+  display: inline;
+}
+
+/* Flex have to be prefixed. http://shouldiprefix.com/ */
+.d_flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.d_inline-flex {
+  display: inline-flex;
+}
+
+/* ul li
+    ================================================== */
+ul.li-inline li {
+  display: inline;
+}
+
+ul.li-reset li {
+  list-style: none;
+}
+
+ul.li-tb-space li {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+ul.li-rl-space li {
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+/* a reset default
+    ================================================== */
+.a_reset {
+  text-decoration: none;
+  color: #000;
+}
+.a_reset:hover {
+  color: inherit;
+}
+.a_reset:hover, .a_reset:active {
+  outline: none;
+}
+.a_reset:not(.default):link {
+  color: black;
+}
+.a_reset:not(.default):visited {
+  color: black;
+}
+
+.a-underline_reset, .a-underline_reset a {
+  text-decoration: none;
+}
+
+.a-c_reset, .a-c_reset a {
+  color: #000;
+}
+.a-c_reset:hover, .a-c_reset a:hover {
+  color: inherit;
+}
+
+.a-c_black, .a-c_black a {
+  color: #000;
+}
+.a-c_black:hover, .a-c_black a:hover {
+  color: #000;
+}
+
+.a-c_white, .a-c_white a {
+  color: #fff;
+}
+.a-c_white:hover, .a-c_white a:hover {
+  color: #fff;
+}
+
+/* fonts
+    ================================================== */
+.serif {
+  font-family: serif;
+}
+
+.times {
+  font-family: 'Times', serif;
+}
+
+.times-new-roman {
+  font-family: 'Times New Roman', serif;
+}
+
+.georgia {
+  font-family: 'Georgia', serif;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.arial {
+  font-family: 'Arial', sans-serif;
+}
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.helvetica-neue {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* text-align
+    ================================================== */
+.t_l {
+  text-align: left;
+}
+
+.t_center {
+  text-align: center;
+}
+
+.t_r {
+  text-align: right;
+}
+
+.t_justify {
+  text-align: justify;
+}
+
+.t_inherit {
+  text-align: inherit;
+}
+
+/* vertical-align
+    ================================================== */
+.v_baseline {
+  vertical-align: baseline;
+}
+
+.v_top {
+  vertical-align: top;
+}
+
+.v_bottom {
+  vertical-align: bottom;
+}
+
+.v_middle {
+  vertical-align: middle;
+}
+
+.v_inherit {
+  vertical-align: inherit;
+}
+
+/* overflow
+    ================================================== */
+.o_auto {
+  overflow: auto;
+}
+
+.o_hidden {
+  overflow: hidden;
+}
+
+.o_inherit {
+  overflow: inherit;
+}
+
+.o_scroll {
+  overflow: scroll;
+}
+
+.o_visible {
+  overflow: visible;
+}
+
+/* position
+    ================================================== */
+.p_absolute {
+  position: absolute;
+}
+
+.p_fixed {
+  position: fixed;
+}
+
+.p_inherit {
+  position: inherit;
+}
+
+.p_relative {
+  position: relative;
+}
+
+.p_static {
+  position: static;
+}
+
+.p_sticky {
+  position: sticky;
+}

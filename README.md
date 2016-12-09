@@ -1,11 +1,11 @@
-# Carver <img src="https://github.com/stabla/Carver/blob/gh-pages/assets/chisel.png" alt="Carver-logo" width="56" height="56">
+# Carver
 
 Carver is a miniscule css framework giving good bases in naked HTML document. Make the web more elegant. With a better readibility. Better size. Improved spacing. Make sure to create a readable and graceful website.
 
 If you want more complete Carver version, you can have :
  - Grid system
  - CSS utilities
- - Basic menu system
+ - Basic Navigation bar
  - Some classic style for input, button, and boxes.
 
 ## [Download](https://stabla.github.io/Carver/)
@@ -14,27 +14,18 @@ If you want more complete Carver version, you can have :
 
 ## Documentation
 ### Table of content
-1. [Light Carver](#user-content-1-light-Carver)
 1. [Grid system](#user-content-2-grid-system)
-1. [Basic menu system](#user-content-3-basic-menu-system)
+1. [Basic Navigation bar](#user-content-3-basic-menu-system)
 1. [Use good skins](#user-content-4-use-good-skins)
 1. [Utilities & CSS Prewrited classes](#user-content-5-utilities--css-prewrited-classes)
 1. [ClaCss.js](#user-content-6-clacssjs) - Write you CSS with Class
 1. [Only if you don't use ClaCss.js](#user-content-7-only-if-you-dont-use-clacssjs)
 1. [Good Google Fonts & Beautiful Web Typ](#user-content-8-good-google-fonts--beautiful-web-type)
+1. [Basesign](#user-content-basesign)
 1. [HackDesign](#user-content-9-hackdesign)
-1. [Design tips](#user-content-some-tips)
 
-### 1. Light Carver
-The light version is for making an elegant website, it's improving size, setting a ```box-sizing: border-box``` to ```*```, or a basic ```margin: 0``` and ```padding: 0``` to ```body, html```. Anyway, it's not [Normalize.css]( https://necolas.github.io/normalize.css/), but it's still relevant (I hope so).
 
-You have not to write anything. No class, no id to add to your html.
-
-Font's size is set to 14px, is you want bigger font-size, you can set ```.bigger-t``` to your class's body. You have also ``` .normal-t ``` to set a normal size in a element where's set ``` .bigger-t ```
-
-If you're not satisfied by h size and you think it's too small, set ```.bigger-h``` to your class's body.  You have also ``` .normal-h ``` to set a normal size in a element where's set ``` .bigger-h ```
-
-### 2. Grid system
+### 1. Grid system
 Ok, so, here, we have a grid system.
 
 #### Basic
@@ -66,7 +57,7 @@ But row is, not really necessary, it's just to be sure to set a width to 100% (r
 
         Example : class="cl-xs-8"
 
-### 3. Basic menu system
+### 2. Basic Navigation bar
 There's a list of available class, it's understable, no explanation needed.
 * ``` .nav-bar``` : setting up a navbar
 * ``` .nav-left``` : setting up a left side to a navbar
@@ -92,7 +83,7 @@ There's a list of available class, it's understable, no explanation needed.
                 </div>
            </div>
 
-### 4. Use good skins
+### 3. Use good skins
 * ``` .box ``` : make a box
 * ``` .danger ``` : to show a danger message (red color). To add to ```.box```
 * ``` .warning ``` : to show an alert message (orange color). To add to ```.box```
@@ -107,7 +98,7 @@ There's a list of available class, it's understable, no explanation needed.
 *```  .butt-space-padding``` : for padding space.
 
 
-### 5. Utilities & CSS Prewrited classes
+### 4. Utilities & CSS Prewrited classes
 A list of available utilities and prewrited classes :
 * ``` .fit ``` : fit element to full size available. (width: 100%)
 * ``` .clear ``` : clear:both.
@@ -213,13 +204,13 @@ A list of available utilities and prewrited classes :
 * ``` .helveticaneue ``` : set ``` font-family: "Helvetica Neue"```
 
 
-### 6. [ClaCss.js](https://github.com/idkn/ClaCss)
+### 5. [ClaCss.js](https://github.com/idkn/ClaCss)
 
 ClaCss.js is a tool to write css directly in your HTML, if you wanna know more, check the dedicated [website](https://github.com/idkn/ClaCss).
 
 When you use ClaCss.js you can have a lighter Carver. I don't recommend to use ClaCss.js for big project.
 
-### 7. Only if you don't use [ClaCss.js](https://github.com/idkn/ClaCss)
+### 6. Only if you don't use [ClaCss.js](https://github.com/idkn/ClaCss)
 
 ### Colors & Background-color
 * ``` .c_blue ``` : set color to blue
@@ -252,25 +243,10 @@ When you use ClaCss.js you can have a lighter Carver. I don't recommend to use C
 * ``` .pa-rl_X ``` : set padding-right and padding-left. X Can be 5, 10, 15, 20, 25.
 * ``` .pa-tb_X ``` : set padding-top and padding-bottom. X Can be 5, 10, 15, 20, 25.
 
-### 8. [Good Google Fonts](https://github.com/stabla/good-google-fonts) & [Beautiful Web Type](https://github.com/ubuwaits/beautiful-web-type)
+### 7. [Good Google Fonts](https://github.com/stabla/good-google-fonts) & [Beautiful Web Type](https://github.com/ubuwaits/beautiful-web-type)
 
+## 8. [Basesign](http://github.com/stabla/Basesign)
 ## 9. [HackDesign](http://www.hackdesign.org)
-
-## 10. Some tips
-- Newsletters with columns will look better if you use the Justified Alignment.
-- Make sure you don’t create rivers of white space though.
-- Use Italics and Bold to point out areas of interest or draw quick reference to information.
-- Use color for emphasis. Remember, reds draw the most attention if used correctly. It is amazing what one spot of red can do for an ordinary ad.
-- A website with bad font will be ugly website. But it's about words too.
-- Treat text as content.
-- Use good typography.
-- Believe "less" is more.
-- Decorate, and but abusive way.
-- Treat text as UI.
-- Go for simplicity and usability.
-- For a good readibility, measure amount of characters on a line, 50-80 characters is the best for readibility.
-- "God is in the detail." -  Ludwig Mies van der Rohe
-- "Make things as simple as possible but no simpler." - Albert Einstein
 
 ## License
 Under MIT license.

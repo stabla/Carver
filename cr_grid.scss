@@ -1,0 +1,80 @@
+.row {
+    width: 100%;
+}
+
+.row .center {
+    margin: 0 auto;
+    display: block;
+    float: none;
+}
+
+$i: 1;
+$list: ".cl-#{$i}, .cl-s-#{$i}, .cl-xs-#{$i}";
+@for $i from (1 + 1) through 12 {
+    $list: "#{$list}, .cl-#{$i}, .cl-s-#{$i}, .cl-xs-#{$i}";
+}
+
+#{$list} {
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+$width-val: 100%/12;
+@for $i from 1 through 12 {
+    .cl-#{$i} {
+        width: $width-val * $i;
+    }
+    .cl-offset-#{$i} {
+        margin-left: $width-val * $i;
+    }
+}
+
+// When responsive
+@media (max-width: 780px) {
+    @for $i from 1 through 12 {
+        .cl-s-#{$i} {
+            width: $width-val * $i;
+        }
+        .cl-offset-#{$i} {
+            margin-left: inherit;
+        }
+        .cl-s-offset-#{$i} {
+            margin-left: $width-val * $i;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    @for $i from 1 through 12 {
+        .cl-xs-#{$i} {
+            width: $width-val * $i;
+        }
+        .cl-offset-#{$i} {
+            margin-left: inherit;
+        }
+        .cl-xs-offset-#{$i} {
+            margin-left: $width-val * $i;
+        }
+    }
+}
+
+@media (min-width: 781px) {
+    .cl-0 {
+        display: none !important;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 780px) {
+    .cl-s-0 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 460px) {
+    .cl-xs-0 {
+        display: none !important;
+    }
+}
