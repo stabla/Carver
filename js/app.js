@@ -5,7 +5,7 @@ $(document).ready(function () {
     var $hero_text = $header.children();
 
     /******************************/
-    /*  
+    /*
     /* Change opacity for hero-text.
     /*
     /*****************************/
@@ -14,7 +14,7 @@ $(document).ready(function () {
     var opacity = 0;
 
     /***********************************/
-    /*  
+    /*
     /* Navigation bar when scrolling or refreshing.
     /*
     /***********************************/
@@ -35,7 +35,7 @@ $(document).ready(function () {
         var $scroll = $(window).scrollTop();
 
         /* Change opacity for hero-text */
-        if ($scroll <= fadestart) { 
+        if ($scroll <= fadestart) {
             opacity = 1;
         } else if ($scroll <= fadeUntil) {
             opacity = 1 - $scroll / fadeUntil;
@@ -43,9 +43,9 @@ $(document).ready(function () {
         $hero_text.css({
             'opacity': opacity
         })
-        
+
         /* Nav-bar when scrolling */
-        if ($scroll > whenToChange) { 
+        if ($scroll > whenToChange) {
             $navbar.addClass('background-dark');
             if ($('#menu-btn').hasClass('active') === false) {
                 $navbar.find('.brand').addClass('brand-show');
@@ -57,7 +57,7 @@ $(document).ready(function () {
     });
 
     /***********************************/
-    /*  
+    /*
     /* Related to menu.
     /*
     /***********************************/
@@ -72,11 +72,11 @@ $(document).ready(function () {
         $hamburger.toggleClass("is-active");
 
         if ($(this).hasClass('active')) {
-            
-               
+            $("body").removeAttr('style');
+
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         $('.nav-bar').animate({'left':'0px'});
-    }   
+    }
             $page.animate({
                 'left': '0px'
             });
@@ -90,9 +90,11 @@ $(document).ready(function () {
             }
 
         } else {
+
+              $("body").css({'overflow-x':'hidden'});
       if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         $('.nav-bar').animate({'left':$menu_width});
-    }            
+    }
             $(this).addClass('active');
             $page.addClass('p_relative');
             $page.animate({
@@ -127,7 +129,7 @@ $(document).ready(function () {
     });
 
     /***********************************/
-    /*  
+    /*
     /* Make custom framework.
     /*
     /***********************************/
@@ -147,7 +149,7 @@ $(document).ready(function () {
     /* The checkbox make it green (selected) or grey (unselected) */
     $ckbx.on('click', function (event) {
         event.preventDefault();
-        
+
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
             $(this).addClass('unselected');
@@ -201,14 +203,14 @@ $(document).ready(function () {
             return allText;
         }
 
-        /* Select each file and launch function to copy */ 
+        /* Select each file and launch function to copy */
         for (var i = 0; i < el_selected.length; i++) {
             if (el_selected[i] !== 'claCss') {
                 textem += readTextFile(el_selected[i]);
         }
         }
 
-        /* Make downloadable link and launch it to user */ 
+        /* Make downloadable link and launch it to user */
         (function () {
             var textFile = null,
                 makeTextFile = function (text) {
@@ -261,7 +263,7 @@ $(document).ready(function () {
 
     });
     /***********************************/
-    /*  
+    /*
     /* Little things.
     /*
     /***********************************/
@@ -317,19 +319,19 @@ $(document).ready(function () {
                 type: document[hidden] ? "blur" : "focus"
             });
     });
-    
+
     /* For box-example */
     $('.title-code').on('click', function () {
         $(this).next().toggle();
     })
-    
+
        $('.butt-get_started').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $('#build-yours-bs').offset().top-100
         }, 500);
     });
-    
+
 
 
 });
