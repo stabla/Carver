@@ -1,6 +1,6 @@
 # Carver
 
-Carver is a miniscule css framework giving good bases in naked HTML document. Make the web more elegant. With a better readibility. Better size. Improved spacing. Make sure to create a readable and graceful website.
+Carver is a miniscule framework to do things directly, as a grid, as navbar, setting a margin or padding, position, display, and more. 
 
 If you want more complete Carver version, you can have :
  - Grid system
