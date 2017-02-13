@@ -72,8 +72,6 @@ $(document).ready(function () {
         $hamburger.toggleClass("is-active");
 
         if ($(this).hasClass('active')) {
-            $("body").removeAttr('style');
-
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         $('.nav-bar').animate({'left':'0px'});
     }
@@ -90,7 +88,6 @@ $(document).ready(function () {
             }
 
         } else {
-
               $("body").css({'overflow-x':'hidden'});
       if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         $('.nav-bar').animate({'left':$menu_width});
@@ -129,9 +126,7 @@ $(document).ready(function () {
     });
 
     /***********************************/
-    /*
     /* Make custom framework.
-    /*
     /***********************************/
     var el_selected = [];
 
@@ -160,16 +155,11 @@ $(document).ready(function () {
             $(this).removeClass('unselected');
             $(this).addClass('selected');
             var u = $(this).attr('id');
-/*
-            if (u === 'basesign_light') {
-                el_selected.splice(0, 0, u);
-            } else {
-*/
                 el_selected.push(u);
-          //  }
         }
     })
 
+    // Forcing button to right.
     function button_to_right() {
         var c_width = $('.custom-dl-btn').outerWidth();
         var butt_width = $('#create').outerWidth();
@@ -192,7 +182,7 @@ $(document).ready(function () {
         function readTextFile(file) {
             var allText;
             $.ajax({
-                url: "Carver/stylesheets/" + file + ".css",
+                url: "https://stabla.github.io/Carver/stylesheets/" + file + ".css",
                 async: false,
                 dataType: 'text',
                 success: function (data) {
@@ -262,64 +252,7 @@ $(document).ready(function () {
         })();
 
     });
-    /***********************************/
-    /*
-    /* Little things.
-    /*
-    /***********************************/
-
-    //add some cool text to the title
-    $(function () {
-        var hidden = "hidden";
-        var oldtitle = document.title;
-        var currenttitle;
-
-        // Standards:
-        if (hidden in document) {
-            document.addEventListener("visibilitychange", onchange);
-       } else if ((hidden = "mozHidden") in document) {
-            document.addEventListener("mozvisibilitychange", onchange);
-       } else if ((hidden = "webkitHidden") in document) {
-            document.addEventListener("webkitvisibilitychange", onchange);
-       } else if ((hidden = "msHidden") in document) {
-            document.addEventListener("msvisibilitychange", onchange);
-        // IE 9 and lower:
-       } else if ("onfocusin" in document) {
-            document.onfocusin = document.onfocusout = onchange;
-        // All others:
-        } else {
-            window.onpageshow = window.onpagehide = window.onfocus = window.onblur = onchange;
-        }
-        function onchange(evt) {
-            var v = "visible",
-                h = "hidden",
-                evtMap = {
-                    focus: v,
-                    focusin: v,
-                    pageshow: v,
-                    blur: h,
-                    focusout: h,
-                    pagehide: h
-                };
-
-            evt = evt || window.event;
-            if (evt.type in evtMap) {
-                currenttitle = oldtitle;
-                $(document).attr('title', currenttitle);
-            } else {
-                currenttitle = this[hidden] ? "Where are you ? :( " : oldtitle;
-                $(document).attr('title', currenttitle);
-            }
-
-        }
-
-        // set the initial state (but only if browser supports the Page Visibility API)
-        if (document[hidden] !== undefined)
-            onchange({
-                type: document[hidden] ? "blur" : "focus"
-            });
-    });
-
+    
     /* For box-example */
     $('.title-code').on('click', function () {
         $(this).next().toggle();
@@ -328,7 +261,7 @@ $(document).ready(function () {
        $('.butt-get_started').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $('#build-yours-bs').offset().top-100
+            scrollTop: $('#build-yours-cr').offset().top-100
         }, 500);
     });
 

@@ -8,7 +8,7 @@ If you want more complete Carver version, you can have :
  - Basic Navigation bar
  - Some classic style for input, button, and boxes.
 
-## [Download](https://stabla.github.io/Carver/)
+## [Download](https://stabla.github.io/Carver/#build-yours-cr)
 ## Demo and examples
  Available at https://stabla.github.io/Carver/
 

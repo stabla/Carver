@@ -7,7 +7,7 @@
   }
 
   /* line 8, ../sass/style.scss */
-  .frame .bs-base ul li {
+  .frame .cr-base ul li {
     display: block;
   }
 
@@ -279,7 +279,7 @@
 }
 
 /* line 240, ../sass/style.scss */
-.grid-bs .row .cl-8 .cl {
+.grid-cr .row .cl-8 .cl {
   height: 2.8444rem;
   border-radius: .28571429rem;
   background-clip: content-box;
@@ -287,120 +287,120 @@
   overflow: auto;
 }
 /* line 246, ../sass/style.scss */
-.grid-bs .row .cl-8 .cl .no-content-box {
+.grid-cr .row .cl-8 .cl .no-content-box {
   background-clip: border-box;
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(1) {
+.grid-cr .row .cl:nth-child(1) {
   background-color: rgba(123, 137, 148, 0.025);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(2) {
+.grid-cr .row .cl:nth-child(2) {
   background-color: rgba(123, 137, 148, 0.05);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(3) {
+.grid-cr .row .cl:nth-child(3) {
   background-color: rgba(123, 137, 148, 0.075);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(4) {
+.grid-cr .row .cl:nth-child(4) {
   background-color: rgba(123, 137, 148, 0.1);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(5) {
+.grid-cr .row .cl:nth-child(5) {
   background-color: rgba(123, 137, 148, 0.125);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(6) {
+.grid-cr .row .cl:nth-child(6) {
   background-color: rgba(123, 137, 148, 0.15);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(7) {
+.grid-cr .row .cl:nth-child(7) {
   background-color: rgba(123, 137, 148, 0.175);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(8) {
+.grid-cr .row .cl:nth-child(8) {
   background-color: rgba(123, 137, 148, 0.2);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(9) {
+.grid-cr .row .cl:nth-child(9) {
   background-color: rgba(123, 137, 148, 0.225);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(10) {
+.grid-cr .row .cl:nth-child(10) {
   background-color: rgba(123, 137, 148, 0.25);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(11) {
+.grid-cr .row .cl:nth-child(11) {
   background-color: rgba(123, 137, 148, 0.275);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(12) {
+.grid-cr .row .cl:nth-child(12) {
   background-color: rgba(123, 137, 148, 0.3);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(13) {
+.grid-cr .row .cl:nth-child(13) {
   background-color: rgba(123, 137, 148, 0.325);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(14) {
+.grid-cr .row .cl:nth-child(14) {
   background-color: rgba(123, 137, 148, 0.35);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(15) {
+.grid-cr .row .cl:nth-child(15) {
   background-color: rgba(123, 137, 148, 0.375);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(16) {
+.grid-cr .row .cl:nth-child(16) {
   background-color: rgba(123, 137, 148, 0.4);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(17) {
+.grid-cr .row .cl:nth-child(17) {
   background-color: rgba(123, 137, 148, 0.425);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(18) {
+.grid-cr .row .cl:nth-child(18) {
   background-color: rgba(123, 137, 148, 0.45);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(19) {
+.grid-cr .row .cl:nth-child(19) {
   background-color: rgba(123, 137, 148, 0.475);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(20) {
+.grid-cr .row .cl:nth-child(20) {
   background-color: rgba(123, 137, 148, 0.5);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(21) {
+.grid-cr .row .cl:nth-child(21) {
   background-color: rgba(123, 137, 148, 0.525);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(22) {
+.grid-cr .row .cl:nth-child(22) {
   background-color: rgba(123, 137, 148, 0.55);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(23) {
+.grid-cr .row .cl:nth-child(23) {
   background-color: rgba(123, 137, 148, 0.575);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(24) {
+.grid-cr .row .cl:nth-child(24) {
   background-color: rgba(123, 137, 148, 0.6);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(25) {
+.grid-cr .row .cl:nth-child(25) {
   background-color: rgba(123, 137, 148, 0.625);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(26) {
+.grid-cr .row .cl:nth-child(26) {
   background-color: rgba(123, 137, 148, 0.65);
 }
 /* line 251, ../sass/style.scss */
-.grid-bs .row .cl:nth-child(27) {
+.grid-cr .row .cl:nth-child(27) {
   background-color: rgba(123, 137, 148, 0.675);
 }
 
 /* line 257, ../sass/style.scss */
-#build-yours-bs {
+#build-yours-cr {
   background-image: -webkit-linear-gradient(179deg, #81c784, rgba(0, 0, 0, 0.052));
   background-image: linear-gradient(179deg, #81c784, rgba(0, 0, 0, 0.052));
   color: #fff;
